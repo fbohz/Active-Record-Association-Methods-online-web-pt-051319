@@ -18,7 +18,6 @@ class Song < ActiveRecord::Base
     else
       drake = Artist.create(name: "Drake")
       self.artist_id = drake.id 
-      self.artist 
     end 
   end
 end
