@@ -18,6 +18,7 @@ class Genre < ActiveRecord::Base
     # return an array of strings containing every musician's name
     
     #self.artists.map(&:name) - Lab Solution
+    
     self.artists.collect do |artist|
       artist.name
     end 
